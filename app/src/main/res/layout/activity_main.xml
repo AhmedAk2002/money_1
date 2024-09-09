@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="192dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollInterpolator="@android:anim/decelerate_interpolator"
+            app:toolbarId="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/app_bar_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="142dp"
+                    app:srcCompat="@drawable/arc_3" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="67dp"
+                    android:layout_marginBottom="76dp"
+                    app:srcCompat="@mipmap/bell_adaptive_fore" />
+
+                <ImageView
+                    android:id="@+id/imageViewff"
+                    android:layout_width="45dp"
+                    android:layout_height="78dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="74dp"
+                    app:srcCompat="@mipmap/icon3_adaptive_fore" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="102dp"
+                    android:text="welcome Back"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:layout_anchorGravity="center">
+
+        <!--        <ScrollView-->
+        <!--            android:id="@+id/scrollView2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="297dp"-->
+        <!--            android:layout_above="@+id/bottomNavigationView"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:layout_marginEnd="3dp"-->
+        <!--            android:layout_marginBottom="107dp">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <RelativeLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:padding="9dp">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView2df"-->
+        <!--                        android:layout_width="181dp"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_alignParentBottom="true"-->
+        <!--                        android:layout_marginEnd="107dp"-->
+        <!--                        android:layout_marginBottom="3dp"-->
+        <!--                        android:text="microphone,8pro"-->
+        <!--                        android:textColor="@color/black"-->
+        <!--                        android:textSize="23dp" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="32dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="203dp"-->
+        <!--                        android:text="-$44"-->
+        <!--                        android:textColor="@color/red"-->
+        <!--                        android:textSize="22dp" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/imageView34f"-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="293dp"-->
+        <!--                        app:srcCompat="@drawable/btn_5" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="86dp"-->
+        <!--                        android:layout_height="35dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="7dp"-->
+        <!--                        android:text="30 sep 2024" />-->
+        <!--                </RelativeLayout>-->
+
+        <!--                <RelativeLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="74dp"-->
+        <!--                    android:padding="9dp">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView2ff"-->
+        <!--                        android:layout_width="181dp"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_alignParentBottom="true"-->
+        <!--                        android:layout_marginEnd="107dp"-->
+        <!--                        android:layout_marginBottom="3dp"-->
+        <!--                        android:text="microphone,8pro"-->
+        <!--                        android:textColor="@color/black"-->
+        <!--                        android:textSize="23dp" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="32dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="203dp"-->
+        <!--                        android:text="-$44"-->
+        <!--                        android:textColor="@color/red"-->
+        <!--                        android:textSize="22dp" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/imageView3f"-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="293dp"-->
+        <!--                        app:srcCompat="@drawable/btn_3" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="86dp"-->
+        <!--                        android:layout_height="35dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="7dp"-->
+        <!--                        android:text="30 sep 2024" />-->
+        <!--                </RelativeLayout>-->
+
+        <!--                <RelativeLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="74dp"-->
+        <!--                    android:padding="9dp">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/textView2s"-->
+        <!--                        android:layout_width="181dp"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_alignParentBottom="true"-->
+        <!--                        android:layout_marginEnd="107dp"-->
+        <!--                        android:layout_marginBottom="3dp"-->
+        <!--                        android:text="microphone,8pro"-->
+        <!--                        android:textColor="@color/black"-->
+        <!--                        android:textSize="23dp" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="32dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="203dp"-->
+        <!--                        android:text="+$54"-->
+        <!--                        android:textColor="@color/green"-->
+        <!--                        android:textSize="22dp" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/imageView3v"-->
+        <!--                        android:layout_width="84dp"-->
+        <!--                        android:layout_height="match_parent"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="293dp"-->
+        <!--                        app:srcCompat="@drawable/btn_4" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:layout_width="86dp"-->
+        <!--                        android:layout_height="35dp"-->
+        <!--                        android:layout_alignParentEnd="true"-->
+        <!--                        android:layout_marginEnd="7dp"-->
+        <!--                        android:text="30 sep 2024" />-->
+
+        <!--                </RelativeLayout>-->
+
+
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="55dp"
+            android:layout_height="61dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="478dp"
+            app:srcCompat="@mipmap/delete_foreground" />
+
+        <ListView
+            android:id="@+id/transactionlist"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="340dp"
+            android:layout_marginBottom="159dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="226dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="437dp"
+            android:text="Last Transaction"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/addbutton"
+            android:layout_width="63dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="178dp"
+            android:layout_marginEnd="178dp"
+            android:layout_marginBottom="89dp"
+            android:background="@drawable/round_shape"
+
+
+            android:backgroundTint="#AA28F1"
+            android:src="@mipmap/plus2_foreground"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginEnd="29dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                >
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="143dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape3">
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/allExpense"-->
+                        <!--                            android:layout_width="126dp"-->
+                        <!--                            android:layout_height="30dp"-->
+                        <!--                            android:layout_alignParentEnd="true"-->
+                        <!--                            android:layout_alignParentBottom="true"-->
+                        <!--                            android:layout_marginTop="42dp"-->
+                        <!--                            android:layout_marginEnd="16dp"-->
+                        <!--                            android:layout_marginBottom="14dp"-->
+                        <!--                            android:fontFamily="sans-serif-medium"-->
+                        <!--                            android:textColor="@color/red"-->
+                        <!--                            android:textSize="15sp"-->
+                        <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                        <!--                        <TextView-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_alignParentEnd="true"-->
+                        <!--                            android:layout_alignParentBottom="true"-->
+                        <!--                            android:layout_marginEnd="21dp"-->
+                        <!--                            android:layout_marginBottom="49dp"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:fontFamily="sans-serif-medium"-->
+                        <!--                            android:text="Your Expenses"-->
+                        <!--                            android:textColor="@color/red"-->
+                        <!--                            android:textSize="16sp" />-->
+
+                        <EditText
+                            android:id="@+id/Expensevalue"
+                            android:layout_width="126dp"
+                            android:layout_height="37dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginBottom="13dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:hint="Expense"
+                            android:numeric="decimal"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-medium"
+                            android:text=" your expense"
+                            android:textColor="#8C8C8C"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/incometext"
+                            android:layout_width="105dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginBottom="117dp"
+                            android:text="Your income"
+                            android:textColor="#8C8C8C"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/allIncome"
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="26dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:hint="income"
+                            android:numeric="decimal"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="111dp"
+                            android:layout_height="44dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="-52dp"
+                            app:srcCompat="@drawable/style" />
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/selector"
+
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:background="@drawable/shape2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView99"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/home_foreground" />
+
+                <ImageView
+                    android:id="@+id/imageView1l"
+                    android:layout_width="63dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/history_foreground" />
+
+                <ImageView
+                    android:id="@+id/imageView111"
+                    android:layout_width="61dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/chart_foreground" />
+
+                <ImageView
+                    android:id="@+id/imageView12h"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/profile_foreground" />
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+</RelativeLayout>
